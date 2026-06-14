@@ -132,10 +132,12 @@ from os import name
 # Розпакуй ці значення в три окремі змінні (name, price, status) і виведи кожну з них.
 # Підказка: Використовуй множинне присвоювання: name, price, status = мій_кортеж.
 
-# item = ("Ноутбук", 25000, "В наявності")
-# print(item)
-# name, price, quantity = item
-# print(name, price, quantity, sep=' || ')
+item = ("Ноутбук", 25000, "В наявності")
+def unpack_tuple(my_tuple: tuple)->None:
+    print(item)
+    name, price, quantity = item
+    print(name, price, quantity, sep=' || ')
+unpack_tuple(item)
 
 # 3. Перевірка наявності
 # Умова: Створи кортеж із п'яти різних кольорів. Напиши перевірку, яка з'ясовує, чи є колір "зелений"
